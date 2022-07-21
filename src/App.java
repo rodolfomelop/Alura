@@ -8,11 +8,14 @@ public class App {
         // fazer uma conexão HTTP e buscar os top 250 filmes
         //
 
-        String url = "https://alura-imdb-api.herokuapp.com/movies";
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        // String url = "https://alura-imdb-api.herokuapp.com/movies";
+        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
         // String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+
+        String url = "http://localhost:8080/linguagens";
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
